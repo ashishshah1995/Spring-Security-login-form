@@ -5,9 +5,9 @@
 
 2. Employees are `authorized` to access links(pages) based on the roles assigned to them using Spring Security. 
 
- Restrict path to employees antMatches("/").hasRoles("Employee")
+   ..Restrict path to employees antMatches("/").hasRoles("Employee")
 
- Restrict path to employees antMatches("/leaders/").hasRoles("manager")
+    ..Restrict path to employees antMatches("/leaders/").hasRoles("manager")
 
  Restrict path to employees antMatches("/systems").hasRoles("admin")
 
