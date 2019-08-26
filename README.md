@@ -5,17 +5,12 @@
 
 2. Employees are `authorized` to access links(pages) based on the roles assigned to them using Spring Security. 
 
-4. And another item.
 
-⋅⋅⋅You can have properly indented paragraphs within list items. Notice the blank line above, and the leading spaces (at least one, but we'll use three here to also align the raw Markdown).
+        Restrict path to employees antMatches("/").hasRoles("Employee")
 
-⋅⋅⋅To have a line brea
+    Restrict path to employees antMatches("/leaders/").hasRoles("manager")
 
-   ..Restrict path to employees antMatches("/").hasRoles("Employee")
-
-    ..Restrict path to employees antMatches("/leaders/").hasRoles("manager")
-
- Restrict path to employees antMatches("/systems").hasRoles("admin")
+    Restrict path to employees antMatches("/systems").hasRoles("admin")
 
 3. Used Maven for Spring MVC Web application and Spring Security(spring-security-web and spring-security-config) dependencies
 
