@@ -5,6 +5,12 @@
 
 2. Employees are `authorized` to access links(pages) based on the roles assigned to them using Spring Security. 
 
+4. And another item.
+
+⋅⋅⋅You can have properly indented paragraphs within list items. Notice the blank line above, and the leading spaces (at least one, but we'll use three here to also align the raw Markdown).
+
+⋅⋅⋅To have a line brea
+
    ..Restrict path to employees antMatches("/").hasRoles("Employee")
 
     ..Restrict path to employees antMatches("/leaders/").hasRoles("manager")
