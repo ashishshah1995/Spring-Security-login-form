@@ -1,15 +1,15 @@
 # Spring-Security-login-form
 
 
-1. Designed Custom login form using Spring, bootstrap , HTML and CSS where employees are first authenticated with form fields for username and password
+1. Designed Custom login form using Spring, bootstrap , HTML and CSS where employees are first `authenticated` with form fields for username and password
 
-2. Employees are authorized to access links(pages) based on the roles assigned to them using Spring Security. 
+2. Employees are `authorized` to access links(pages) based on the roles assigned to them using Spring Security. 
 
-... Restrict path to employees antMatches("/").hasRoles("Employee")
+ Restrict path to employees antMatches("/").hasRoles("Employee")
 
-... Restrict path to employees antMatches("/leaders/").hasRoles("manager")
+ Restrict path to employees antMatches("/leaders/").hasRoles("manager")
 
-... Restrict path to employees antMatches("/systems").hasRoles("admin")
+ Restrict path to employees antMatches("/systems").hasRoles("admin")
 
 3. Used Maven for Spring MVC Web application and Spring Security(spring-security-web and spring-security-config) dependencies
 
@@ -17,9 +17,9 @@
 
 # Security
 
-1. CROSS SITE REQUEST FORGERY (CSFR) are taken care with use Spring MVC form <form : form> tags which provides automatic support for Spring Security
+1. **CROSS SITE REQUEST FORGERY (CSFR**) are taken care with use Spring MVC form <form : form> tags which provides automatic support for Spring Security
 
-2. Password are encrypted in the database using bcrypt algorithm
+2. Password are encrypted in the database using **bcrypt algorithm**
 + Perform one way encryption
 + Add random salt to password fpr additional protection
 + Include support to defeat brute force attacks
