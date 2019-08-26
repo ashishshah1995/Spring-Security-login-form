@@ -5,16 +5,21 @@
 
 2. Employees are `authorized` to access links(pages) based on the roles assigned to them using Spring Security. 
 
+3. All Employee are authorized to access ("/") path. 
 
-        Restrict path to employees antMatches("/").hasRoles("Employee")
+        Restrict path to employees antMatches("/").hasRoles("EMPLOYEE")
 
-        Restrict path to employees antMatches("/leaders/").hasRoles("manager")
+4. All Manager are authorized to access ("/") and ("/leaders/") path. 
 
-       Restrict path to employees antMatches("/systems").hasRoles("admin")
+        Restrict path to employees antMatches("/leaders/").hasRoles("MANAGER")
 
-3. Used Maven for Spring MVC Web application and Spring Security(spring-security-web and spring-security-config) dependencies
+5. All Admin are authorized to access ("/") and ("/systems/") path. 
 
-4. Add logout support for spring security configuration
+        Restrict path to employees antMatches("/systems").hasRoles("ADMIN")
+
+6. Used **Maven** for Spring MVC Web application and Spring Security(spring-security-web and spring-security-config) dependencies
+
+7. Added logout support for spring security configuration
 
 # Security
 
